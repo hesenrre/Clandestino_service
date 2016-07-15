@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  providertype_id: 1
+  company_name: MyString
+  rfc: MyString
+  description: MyText
+
+two:
+  providertype_id: 1
+  company_name: MyString
+  rfc: MyString
+  description: MyText

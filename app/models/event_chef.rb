@@ -1,0 +1,2 @@
+class EventChef < ApplicationRecord
+end

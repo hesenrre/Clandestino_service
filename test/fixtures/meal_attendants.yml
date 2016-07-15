@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  mealevent_id: 1
+  client_id: 1
+  event_rate: 9.99
+  chef_rate: 9.99
+  meal_rate: 9.99
+  status: MyString
+  guest: 1
+
+two:
+  mealevent_id: 1
+  client_id: 1
+  event_rate: 9.99
+  chef_rate: 9.99
+  meal_rate: 9.99
+  status: MyString
+  guest: 1

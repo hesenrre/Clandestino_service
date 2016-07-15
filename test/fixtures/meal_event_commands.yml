@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  mealattendant_id: 1
+  quantity: 1
+  table_no: 1
+
+two:
+  mealattendant_id: 1
+  quantity: 1
+  table_no: 1

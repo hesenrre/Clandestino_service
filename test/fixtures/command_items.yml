@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  mealeventcommand_id: 1
+  eventproduct_id: 1
+  quantity: 1
+
+two:
+  mealeventcommand_id: 1
+  eventproduct_id: 1
+  quantity: 1

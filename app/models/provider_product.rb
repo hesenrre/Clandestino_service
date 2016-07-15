@@ -1,0 +1,2 @@
+class ProviderProduct < ApplicationRecord
+end

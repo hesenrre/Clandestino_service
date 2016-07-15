@@ -1,0 +1,2 @@
+class ChefGallery < ApplicationRecord
+end

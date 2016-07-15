@@ -1,0 +1,2 @@
+class ChefMediaGroup < ApplicationRecord
+end

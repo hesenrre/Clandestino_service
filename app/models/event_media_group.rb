@@ -1,0 +1,2 @@
+class EventMediaGroup < ApplicationRecord
+end

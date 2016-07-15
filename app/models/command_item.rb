@@ -1,0 +1,2 @@
+class CommandItem < ApplicationRecord
+end

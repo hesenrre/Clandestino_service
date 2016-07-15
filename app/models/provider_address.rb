@@ -1,0 +1,2 @@
+class ProviderAddress < ApplicationRecord
+end
