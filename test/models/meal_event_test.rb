@@ -18,7 +18,9 @@ class MealEventTest < ActiveSupport::TestCase
     "event should have related event media group"
     assert event.address,
     "event should have an address related"
-    assert (event.event_providers and not event.event_providers.empty?),
-    "event should have an event providers related"
+    assert (event.providers and not event.providers.empty?),
+    "event should have an providers related"
+    assert (event.products and not event.products.empty?),
+    "event shoudl have products"
   end
 end
