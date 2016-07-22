@@ -1,13 +1,40 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  number: MyString
-  ext: MyString
-  label: MyString
+  id: 1
+  number: 53928595
+  label: home
   person_id: 1
 
 two:
-  number: MyString
-  ext: MyString
-  label: MyString
+  id: 2
+  number: 5538299510
+  ext: 345
+  label: office
+  person_id: 1
+
+two:
+  id: 3
+  number: 5538214123
+  label: home
+  person_id: 1
+
+two:
+  id: 4
+  number: 5523423562
+  ext: 5643
+  label: office
+  person_id: 1
+
+two:
+  id: 5
+  number: 5523423422
+  label: home
+  person_id: 1
+
+two:
+  id: 6
+  number: 5523423623
+  ext: 673
+  label: office
   person_id: 1

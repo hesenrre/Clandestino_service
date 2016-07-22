@@ -1,9 +1,31 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
-  photo: MyString
+  id: 1
+  name: Juan Perez
+  photo: http://aws.amazon.com/persons/juan_perez.jpg
 
 two:
-  name: MyString
-  photo: MyString
+  id: 2
+  name: Julia Alcazar
+  photo: http://aws.amazon.com/persons/julia_alcaza.jpg
+
+three:
+  id: 3
+  name: Maximiliano Cruz
+  photo: http://aws.amazon.com/persons/max_cruz.jpg
+
+four:
+  id: 4
+  name: Mirna Bastida
+  photo: http://aws.amazon.com/persons/mirna_bastida.jpg
+
+five:
+  id: 5
+  name: Arturo Gallegos
+  photo: http://aws.amazon.com/persons/arturo_gallegos.jpg
+
+six:
+  id: 6
+  name: Demetrio Cruz
+  photo: http://aws.amazon.com/persons/demetrio_cruz.jpg

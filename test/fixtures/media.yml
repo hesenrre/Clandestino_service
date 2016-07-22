@@ -1,13 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  label: MyString
-  description: MyText
-  type: 
-  url: MyString
+  label: foto1
+  description: foto1
+  type: 1
+  url: http://aws.amazon.com/media/g1/foto1.jpg
 
 two:
-  label: MyString
-  description: MyText
-  type: 
-  url: MyString
+  label: foto2
+  description: foto2
+  type: 1
+  url: http://aws.amazon.com/media/g1/foto1.jpg

@@ -4,6 +4,14 @@ one:
   chefgallery_id: 1
   media_id: 1
 
-two:
+one:
   chefgallery_id: 1
-  media_id: 1
+  media_id: 2
+
+one:
+  chefgallery_id: 1
+  media_id: 3
+
+one:
+  chefgallery_id: 1
+  media_id: 4

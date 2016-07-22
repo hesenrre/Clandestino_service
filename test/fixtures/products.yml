@@ -1,13 +1,43 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
-  description: MyText
-  code: MyString
-  quantity: 1
+  id: 1
+  name: Vino las moras 1lt
+  description: Botella de vino
+  code: bGFzIG1vcmFz
+  quantity: 10
 
 two:
-  name: MyString
-  description: MyText
-  code: MyString
-  quantity: 1
+  id: 2
+  name: Vino las Casa Blanca 1lt
+  description: Botella de vino
+  code: bGFzIG1vcmFz
+  quantity: 12
+
+three:
+  id: 3
+  name: Vino Monte Xanik 1lt
+  description: Botella de vino
+  code: bGFzIG1vcmFz
+  quantity: 30
+
+four:
+  id: 4
+  name: Vino casillero del diablo 1lt
+  description: Botella de vino
+  code: bGFzIG1vcmFz
+  quantity: 50
+
+five:
+  id: 5
+  name: Vino Lambrusco 1lt
+  description: Botella de vino
+  code: bGFzIG1vcmFz
+  quantity: 5
+
+six:
+  id: 6
+  name: Vino Barefoot 1lt
+  description: Botella de vino
+  code: bGFzIG1vcmFz
+  quantity: 13

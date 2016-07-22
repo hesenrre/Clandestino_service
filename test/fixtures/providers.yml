@@ -2,12 +2,6 @@
 
 one:
   providertype_id: 1
-  company_name: MyString
-  rfc: MyString
-  description: MyText
-
-two:
-  providertype_id: 1
-  company_name: MyString
-  rfc: MyString
-  description: MyText
+  company_name: The Winer Company
+  rfc: TWC121026RE5
+  description: Wine provider since 2012

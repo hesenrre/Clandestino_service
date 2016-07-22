@@ -1,27 +1,15 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  event_date: 2016-07-15 11:10:37
-  confirmation_deadline: 2016-07-15 11:10:37
-  provider_confirmation_deadline: 2016-07-15 11:10:37
-  baseprice: 9.99
-  min_attendants: 1
-  max_attendants: 1
-  max_guest: 1
-  description: MyText
-  instructions: MyText
-  rules: MyText
-  address_id: 1
-
-two:
-  event_date: 2016-07-15 11:10:37
-  confirmation_deadline: 2016-07-15 11:10:37
-  provider_confirmation_deadline: 2016-07-15 11:10:37
-  baseprice: 9.99
-  min_attendants: 1
-  max_attendants: 1
-  max_guest: 1
-  description: MyText
-  instructions: MyText
-  rules: MyText
-  address_id: 1
+  id: 1
+  event_date: 2016-07-15 11:10:37 UTC
+  confirmation_deadline: 2016-07-15 11:10:37 UTC
+  provider_confirmation_deadline: 2016-07-15 11:10:37 UTC
+  baseprice: 3500.00
+  min_attendants: 10
+  max_attendants: 18
+  max_guest: 4
+  description: Test event
+  instructions: Test instructions
+  rules: Test rules
+  address_id: 3

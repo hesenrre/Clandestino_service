@@ -1,23 +1,46 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  street: MyString
-  no_ext: MyString
-  no_int: MyString
-  neighborhood: MyString
-  city: MyString
-  state: MyString
-  country: MyString
+client:
+  id: 1
+  street: Xola
+  no_ext: 304
+  neighborhood: Del Valle
+  city: Mexico
+  state: DF
+  country: Mexico
   lat: 9.99
   lng: 9.99
 
-two:
-  street: MyString
-  no_ext: MyString
-  no_int: MyString
-  neighborhood: MyString
-  city: MyString
-  state: MyString
-  country: MyString
+chef:
+  id: 2
+  street: Escocia
+  no_ext: 29
+  no_int: 302
+  neighborhood: Del Valle Centro
+  city: Mexico
+  state: DF
+  country: Mexico
+  lat: 9.99
+  lng: 9.99
+
+event:
+  id: 3
+  street: Lucerna
+  no_ext: 21
+  neighborhood: Cuahutemoc
+  city: Mexico
+  state: Cuahutemoc
+  country: Mexico
+  lat: 9.99
+  lng: 9.99
+
+provider:
+  id: 4
+  street: Av Colonia del Valle
+  no_ext: 204
+  neighborhood: Del Valle
+  city: Mexico
+  state: DF
+  country: Mexico
   lat: 9.99
   lng: 9.99

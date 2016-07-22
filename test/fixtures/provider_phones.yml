@@ -1,11 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  phone_id: 1
+  phone_id: 2
   provider_id: 1
-  type: 
+  type: office
 
 two:
-  phone_id: 1
+  phone_id: 4
   provider_id: 1
-  type: 
+  type: office

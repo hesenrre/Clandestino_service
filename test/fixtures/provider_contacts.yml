@@ -2,16 +2,16 @@
 
 one:
   provider_id: 1
-  person_id: 1
-  type: 
+  person_id: 4
+  type: 1
   opening_hour: 2016-07-15 11:13:09
   closing_hour: 2016-07-15 11:13:09
   working_days: 1
 
 two:
   provider_id: 1
-  person_id: 1
-  type: 
+  person_id: 3
+  type: 1
   opening_hour: 2016-07-15 11:13:09
   closing_hour: 2016-07-15 11:13:09
   working_days: 1

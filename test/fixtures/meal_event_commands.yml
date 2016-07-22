@@ -1,11 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
+  id: 1
   mealattendant_id: 1
-  quantity: 1
+  quantity: 5
   table_no: 1
 
 two:
-  mealattendant_id: 1
-  quantity: 1
-  table_no: 1
+  id: 2
+  mealattendant_id: 2
+  quantity: 10
+  table_no: 2

@@ -1,11 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  name: MyString
-  description: MyText
-  mealevent_id: 1
+entrance:
+  id: 1
+  name: Entrance
+  description: Client's reception
+  meal_event_id: 1
 
-two:
-  name: MyString
-  description: MyText
-  mealevent_id: 1
+showtime:
+  id: 2
+  name: Showtime
+  description: At the event
+  meal_event_id: 1

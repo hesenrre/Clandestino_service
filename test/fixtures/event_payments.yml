@@ -4,14 +4,6 @@ one:
   mealeventcommand_id: 1
   type: 1
   transaction_date: 2016-07-15 12:20:55
-  transaction_id: MyString
-  reference: MyString
-  amount: 9.99
-
-two:
-  mealeventcommand_id: 1
-  type: 1
-  transaction_date: 2016-07-15 12:20:55
-  transaction_id: MyString
-  reference: MyString
+  transaction_id: Y2VkaXRjYXJk
+  reference: cmVmZXJlbmNl
   amount: 9.99

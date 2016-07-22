@@ -3,7 +3,7 @@ class CreateEventGalleries < ActiveRecord::Migration[5.0]
     create_table :event_galleries do |t|
       t.string :name
       t.text :description
-      t.integer :mealevent_id
+      t.integer :meal_event_id
 
       t.timestamps
     end

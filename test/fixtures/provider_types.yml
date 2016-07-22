@@ -1,9 +1,21 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  label: MyString
-  description: MyText
+winer:
+  id: 1
+  label: Winer
+  description: Proveedor de vino
 
-two:
-  label: MyString
-  description: MyText
+beer:
+  id: 2
+  label: Beer
+  description: Proveedor de cerveza
+
+cattering:
+  id: 3
+  label: Cattering
+  description: Proveedor de Mesas
+
+music:
+  id: 4
+  label: Music
+  description: Proveedor de musica
