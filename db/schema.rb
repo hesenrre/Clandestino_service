@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160715180317) do
+ActiveRecord::Schema.define(version: 20160722154701) do
 
   create_table "addresses", force: :cascade do |t|
     t.string   "street"
@@ -35,10 +35,10 @@ ActiveRecord::Schema.define(version: 20160715180317) do
   end
 
   create_table "chef_media_groups", force: :cascade do |t|
-    t.integer  "chefgallery_id"
-    t.integer  "media_id"
-    t.datetime "created_at",     null: false
-    t.datetime "updated_at",     null: false
+    t.integer  "chef_gallery_id"
+    t.integer  "medium_id"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
   end
 
   create_table "chefs", force: :cascade do |t|
@@ -54,6 +54,8 @@ ActiveRecord::Schema.define(version: 20160715180317) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
+    t.integer  "person_id"
+    t.integer  "contract_id"
     t.index ["email"], name: "index_chefs_on_email", unique: true
     t.index ["reset_password_token"], name: "index_chefs_on_reset_password_token", unique: true
   end
@@ -78,16 +80,18 @@ ActiveRecord::Schema.define(version: 20160715180317) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
+    t.integer  "person_id"
+    t.integer  "contract_id"
     t.index ["email"], name: "index_clients_on_email", unique: true
     t.index ["reset_password_token"], name: "index_clients_on_reset_password_token", unique: true
   end
 
   create_table "command_items", force: :cascade do |t|
-    t.integer  "mealeventcommand_id"
-    t.integer  "eventproduct_id"
+    t.integer  "meal_event_command_id"
+    t.integer  "event_product_id"
     t.integer  "quantity"
-    t.datetime "created_at",          null: false
-    t.datetime "updated_at",          null: false
+    t.datetime "created_at",            null: false
+    t.datetime "updated_at",            null: false
   end
 
   create_table "contracts", force: :cascade do |t|
@@ -131,14 +135,14 @@ ActiveRecord::Schema.define(version: 20160715180317) do
   end
 
   create_table "event_payments", force: :cascade do |t|
-    t.integer  "mealeventcommand_id"
+    t.integer  "meal_event_command_id"
     t.integer  "type"
     t.datetime "transaction_date"
     t.string   "transaction_id"
     t.string   "reference"
     t.decimal  "amount"
-    t.datetime "created_at",          null: false
-    t.datetime "updated_at",          null: false
+    t.datetime "created_at",            null: false
+    t.datetime "updated_at",            null: false
   end
 
   create_table "event_products", force: :cascade do |t|
@@ -163,9 +167,9 @@ ActiveRecord::Schema.define(version: 20160715180317) do
 
   create_table "food_preferences", force: :cascade do |t|
     t.integer  "client_id"
-    t.integer  "foodstyle_id"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.integer  "food_style_id"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
   end
 
   create_table "food_styles", force: :cascade do |t|
@@ -195,11 +199,11 @@ ActiveRecord::Schema.define(version: 20160715180317) do
   end
 
   create_table "meal_event_commands", force: :cascade do |t|
-    t.integer  "mealattendant_id"
+    t.integer  "meal_attendant_id"
     t.integer  "quantity"
     t.integer  "table_no"
-    t.datetime "created_at",       null: false
-    t.datetime "updated_at",       null: false
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
   end
 
   create_table "meal_events", force: :cascade do |t|
@@ -221,7 +225,7 @@ ActiveRecord::Schema.define(version: 20160715180317) do
   create_table "media", force: :cascade do |t|
     t.string   "label"
     t.text     "description"
-    t.integer  "type"
+    t.integer  "m_type"
     t.string   "url"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
