@@ -1,7 +1,15 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
+  id: 1
   providertype_id: 1
   company_name: The Winer Company
   rfc: TWC121026RE5
   description: Wine provider since 2012
+
+two:
+  id: 2
+  providertype_id: 2
+  company_name: Tables Inc
+  rfc: TAI300180AS4
+  description: Best tables on Mexico City

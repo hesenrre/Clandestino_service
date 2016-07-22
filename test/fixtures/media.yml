@@ -1,13 +1,29 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
+  id: 1
   label: foto1
   description: foto1
-  type: 1
+  m_type: 1
   url: http://aws.amazon.com/media/g1/foto1.jpg
 
 two:
+  id: 2
   label: foto2
   description: foto2
-  type: 1
+  m_type: 1
   url: http://aws.amazon.com/media/g1/foto1.jpg
+
+three:
+  id: 3
+  label: foto3
+  description: foto3
+  m_type: 1
+  url: http://aws.amazon.com/media/g1/foto3.jpg
+
+four:
+  id: 4
+  label: foto4
+  description: foto4
+  m_type: 1
+  url: http://aws.amazon.com/media/g1/foto4.jpg

@@ -1,4 +1,4 @@
 class ChefMediaGroup < ApplicationRecord
   belongs_to :chef_gallery
-  belongs_to :media
+  belongs_to :medium
 end

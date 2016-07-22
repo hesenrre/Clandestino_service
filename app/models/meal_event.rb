@@ -7,4 +7,6 @@ class MealEvent < ApplicationRecord
   has_many :event_providers
   has_many :providers, through: :event_providers
   has_many :event_galleries
+  has_many :event_products
+  has_many :products, through: :event_products
 end

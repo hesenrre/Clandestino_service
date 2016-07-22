@@ -6,5 +6,7 @@
 
 chef1:
   id: 1
+  person_id: 4
+  contract_id: 2
   email: chef1@gmail.com
   encrypted_password: $2a$11$Sn/hc6MlBxzNYgE4j/UZ7ut8PpmkMKbyTeBTuG0atZuAfiwdXO5T2

@@ -9,5 +9,6 @@ class Chef < ApplicationRecord
   has_many :event_chefs
   has_many :meal_events, through: :event_chefs
   has_many :chef_galleries
+  has_many :phones, through: :person
   # has_many :chef_media_groups, through: :chef_galleries
 end
