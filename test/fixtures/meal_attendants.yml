@@ -17,5 +17,5 @@ two:
   event_rate: 9.0
   chef_rate: 9.0
   meal_rate: 9.0
-  status: 1
+  status: 0
   guest: 2

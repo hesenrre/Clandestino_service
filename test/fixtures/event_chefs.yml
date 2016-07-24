@@ -5,9 +5,3 @@ one:
   meal_event_id: 1
   status: 1 #confirmed status
   priority: 1
-
-two:
-  chef_id: 2
-  meal_event_id: 1
-  status: 1 #confirmed status
-  priority: 2

@@ -10,3 +10,10 @@ client1:
   contract_id: 1
   email: client1@gmail.com
   encrypted_password: $2a$11$47JW1j2vjRie7xAG5yHBAe6LdvcdEaUyRQjOeqXhnQZpobaomrFIS
+
+client2:
+  id: 2
+  person_id: 3
+  contract_id: 2
+  email: client2@gmail.com
+  encrypted_password: $2a$11$47JW1j2vjRie7xAG5yHBAe6LdvcdEaUyRQjOeqXhnQZpobaomrFIS
