@@ -13,3 +13,17 @@ one:
   instructions: Test instructions
   rules: Test rules
   address_id: 3
+
+two:
+  id: 2
+  event_date: <%= Time.now + 15.days %>
+  confirmation_deadline: <%= Time.now + 8.days %>
+  provider_confirmation_deadline: <%= Time.now + 12.days %>
+  baseprice: 3500.00
+  min_attendants: 10
+  max_attendants: 18
+  max_guest: 4
+  description: future event
+  instructions: instructions
+  rules: rules
+  address_id: 4
