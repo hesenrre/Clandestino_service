@@ -12,6 +12,7 @@ class CreateMealEvents < ActiveRecord::Migration[5.0]
       t.text :instructions
       t.text :rules
       t.integer :address_id
+      t.integer :status, null: false, default: 0
 
       t.timestamps
     end

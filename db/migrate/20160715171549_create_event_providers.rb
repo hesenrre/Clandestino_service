@@ -4,7 +4,7 @@ class CreateEventProviders < ActiveRecord::Migration[5.0]
       t.integer :meal_event_id
       t.integer :provider_id
       t.integer :contract_id
-      t.integer :status
+      t.integer :status, null: false, default: 0
       t.integer :priority
       t.datetime :execution_time
 
