@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class EventChefTest < ActiveSupport::TestCase
+class CallTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

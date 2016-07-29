@@ -1,4 +1,4 @@
-class EventChef < ApplicationRecord
+class Call < ApplicationRecord
   enum status: [:confirmed, :not_going, :maybe]
   belongs_to :chef
   has_one :person, through: :chef

@@ -8,7 +8,7 @@ class MealEventTest < ActiveSupport::TestCase
     "event should have attendants"
     assert event.clients.first,
     "attendant must have client related"
-    assert (event.event_chefs and not event.event_chefs.empty?),
+    assert (event.calls and not event.calls.empty?),
     "event should have event chefs"
     assert event.chefs.first,
     "event should have chefs"

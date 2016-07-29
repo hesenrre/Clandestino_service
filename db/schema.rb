@@ -110,7 +110,7 @@ ActiveRecord::Schema.define(version: 20160722154701) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "event_chefs", force: :cascade do |t|
+  create_table "calls", force: :cascade do |t|
     t.integer  "chef_id"
     t.integer  "meal_event_id"
     t.integer  "status"

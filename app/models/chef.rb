@@ -6,8 +6,8 @@ class Chef < ApplicationRecord
 
   belongs_to :person
   belongs_to :contract
-  has_many :event_chefs
-  has_many :meal_events, through: :event_chefs
+  has_many :calls
+  has_many :meal_events, through: :calls
   has_many :chef_galleries
   has_many :phones, through: :person
   # has_many :chef_media_groups, through: :chef_galleries

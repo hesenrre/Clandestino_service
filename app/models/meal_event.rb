@@ -4,8 +4,8 @@ class MealEvent < ApplicationRecord
   belongs_to :address
   has_many :invitations
   has_many :clients, through: :invitations
-  has_many :event_chefs
-  has_many :chefs, through: :event_chefs
+  has_many :calls
+  has_many :chefs, through: :calls
   has_many :event_providers
   has_many :providers, through: :event_providers
   has_many :event_galleries
