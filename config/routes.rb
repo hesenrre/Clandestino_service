@@ -5,6 +5,23 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   namespace :api do
     namespace :v1 do
+      #Clients namespace at global route
+      namespace :clients do
+        resources :me, only: [:index] do
+          collection do
+            get 'current_event'
+            get 'last_events'
+            get 'addresses'
+          end
+        end
+        resources :addresses, only: [:show], shallow: true
+        resources :invitations, only: [:show], shallow: true
+      end
+
+
+      # Chefs at global route
+      resources :chefs, only: [:index, :show]
+
       resources :meal_events, only: [:index, :show], as: :events do
         scope shallow_path: "meal_events" do
           post "add_chefs", on: :member
