@@ -18,4 +18,15 @@ class Client < ApplicationRecord
   has_many :command_items, through: :meal_event_commands
   has_many :event_products, through: :command_items
   has_many :products, through: :event_products
+
+  def active_invitation 
+    return is_on_time(invitations.last) ? invitations.last : nil
+  end
+
+  private
+  def is_on_time(invitation)
+     not (invitation.meal_event.closed? or invitation.meal_event.canceled?) and
+    ((invitation.unconfirmed? and invitation.meal_event.confirmation_deadline.future?) or
+    (invitation.confirmed? and Time.now < invitation.meal_event.event_date + 6.hours ))
+  end
 end
