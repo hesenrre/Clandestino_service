@@ -9,7 +9,7 @@ Rails.application.routes.draw do
         scope shallow_path: "meal_events" do
           post "add_chefs", on: :member
           post "add_chef/:id", to: "meal_events#add_chef", on: :member
-          resources :meal_attendants, only: [:index, :show], shallow: true, as: :attendants do
+          resources :invitations, only: [:index, :show], shallow: true, as: :attendants do
             resources :addresses, only: [:index]
           end
           resources :chefs, only: [:index, :show], shallow: true

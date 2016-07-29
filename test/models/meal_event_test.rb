@@ -4,7 +4,7 @@ class MealEventTest < ActiveSupport::TestCase
   test "MealEvent has correct relations" do
     event = MealEvent.first
     assert event, "event should exists"
-    assert (event.meal_attendants and not event.meal_attendants.empty?),
+    assert (event.invitations and not event.invitations.empty?),
     "event should have attendants"
     assert event.clients.first,
     "attendant must have client related"

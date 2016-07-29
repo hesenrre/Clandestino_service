@@ -19,3 +19,13 @@ two:
   meal_rate: 9.0
   status: 0
   guest: 2
+
+tree:
+  id: 3
+  meal_event_id: 2
+  client_id: 1
+  event_rate: 0
+  chef_rate: 0
+  meal_rate: 0
+  status: 0
+  guest: 0

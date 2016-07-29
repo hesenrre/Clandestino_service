@@ -3,7 +3,7 @@ class Api::V1::AddressesController < Api::V1::BaseController
     @addresses =  if params.has_key? :event_id
       [MealEvent.find(params[:event_id]).address]
     elsif params.has_key? :attendant_id
-      MealAttendant.find(params[:attendant_id]).client.delivery_addresses
+      Invitation.find(params[:attendant_id]).client.delivery_addresses
     else
       Address.all
     end

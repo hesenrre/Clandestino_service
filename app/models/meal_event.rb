@@ -1,7 +1,9 @@
 class MealEvent < ApplicationRecord
+  enum status: [:on_confirmation, :closed, :canceled, :rescheduled, :ongoing]
+
   belongs_to :address
-  has_many :meal_attendants
-  has_many :clients, through: :meal_attendants
+  has_many :invitations
+  has_many :clients, through: :invitations
   has_many :event_chefs
   has_many :chefs, through: :event_chefs
   has_many :event_providers

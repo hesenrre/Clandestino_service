@@ -1,5 +1,5 @@
-class MealAttendant < ApplicationRecord
-  enum status: [:confirmed, :not_going, :maybe]
+class Invitation < ApplicationRecord
+  enum status: [:unconfirmed, :confirmed, :not_going, :maybe]
   belongs_to :meal_event
   belongs_to :client
   has_one :person, through: :client

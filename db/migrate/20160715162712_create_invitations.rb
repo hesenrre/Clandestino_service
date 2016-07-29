@@ -1,6 +1,6 @@
-class CreateMealAttendants < ActiveRecord::Migration[5.0]
+class CreateInvitations < ActiveRecord::Migration[5.0]
   def change
-    create_table :meal_attendants do |t|
+    create_table :invitations do |t|
       t.integer :meal_event_id
       t.integer :client_id
       t.decimal :event_rate

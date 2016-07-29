@@ -186,7 +186,7 @@ ActiveRecord::Schema.define(version: 20160722154701) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "meal_attendants", force: :cascade do |t|
+  create_table "invitations", force: :cascade do |t|
     t.integer  "meal_event_id"
     t.integer  "client_id"
     t.decimal  "event_rate"
@@ -199,7 +199,7 @@ ActiveRecord::Schema.define(version: 20160722154701) do
   end
 
   create_table "meal_event_commands", force: :cascade do |t|
-    t.integer  "meal_attendant_id"
+    t.integer  "invitation_id"
     t.integer  "quantity"
     t.integer  "table_no"
     t.datetime "created_at",        null: false

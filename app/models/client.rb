@@ -12,9 +12,9 @@ class Client < ApplicationRecord
   has_many :food_styles, through: :food_preferences
   has_many :delivery_addresses
   has_many :addresses, through: :delivery_addresses
-  has_many :meal_attendants
-  has_many :meal_events, through: :meal_attendants
-  has_many :meal_event_commands, through: :meal_attendants
+  has_many :invitations
+  has_many :meal_events, through: :invitations
+  has_many :meal_event_commands, through: :invitations
   has_many :command_items, through: :meal_event_commands
   has_many :event_products, through: :command_items
   has_many :products, through: :event_products
