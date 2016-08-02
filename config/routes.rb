@@ -33,6 +33,7 @@ Rails.application.routes.draw do
         resources :commands, shallow: true
       end
 
+      resources :addresses, shallow: true  
 
       # Chefs at global route
       resources :chefs, only: [:index, :show]

@@ -1,0 +1,1 @@
+json.merge! @phone.attributes

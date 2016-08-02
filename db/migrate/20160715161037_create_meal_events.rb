@@ -1,6 +1,7 @@
 class CreateMealEvents < ActiveRecord::Migration[5.0]
   def change
     create_table :meal_events do |t|
+      t.string :name
       t.datetime :event_date
       t.datetime :confirmation_deadline
       t.datetime :provider_confirmation_deadline
