@@ -1,5 +1,14 @@
 class Api::V1::MeController < Api::V1::BaseController
+  devise_group :user, contains: [:client, :chef]
+  before_action :authenticate_user!, only: [:index, :phones]
+  before_action :authenticate_client!, except: [:index, :calls, :phones]
+  before_action :authenticate_chef!, only: [:calls]
   before_action :me
+
+  def index
+    @me = current_user
+    @user_type = user_type
+  end
 
   # BEGIN CLIENT METHODS
   def interests
@@ -7,6 +16,7 @@ class Api::V1::MeController < Api::V1::BaseController
   end
 
   def food_preferences
+    # p current_client
     @food_preferences = @me.food_styles
   end
 
@@ -34,10 +44,14 @@ class Api::V1::MeController < Api::V1::BaseController
 
   private
   def me
-    @me = if request.original_url.include? "clients"
-      Client.find(1)
+    @me = current_user || current_client || current_chef
+  end
+
+  def user_type
+    if current_client
+      "client"
     else
-      Chef.find(1)
+      "chef"
     end
   end
 end

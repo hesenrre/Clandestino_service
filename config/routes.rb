@@ -5,23 +5,28 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   namespace :api do
     namespace :v1 do
-      # Clients namespace at global route
-      resources :clients, only: [:index, :show] do
+
+      resources :me, only: :index do
         collection do
-          get 'me'
-          get 'me/delivery_addresses'
-          post 'me/delivery_addresses', to: 'delivery_addresses#create'
-          get 'me/invitations'
-          post 'me/invitations', to: 'invitations#create'
-          get 'me/phones'
-          post 'me/phones', to: 'phones#create'
-          get 'me/interests'
-          post 'me/interests', to: 'interests#create'
-          get 'me/food_preferences'
-          post 'me/food_preferences', to: 'food_preferences#create'
+          get 'delivery_addresses'
+          post 'delivery_addresses', to: 'delivery_addresses#create'
+          get 'invitations'
+          post 'invitations', to: 'invitations#create'
+          get 'phones'
+          post 'phones', to: 'phones#create'
+          get 'interests'
+          post 'interests', to: 'interests#create'
+          get 'food_preferences'
+          post 'food_preferences', to: 'food_preferences#create'
+          get 'calls'
+          post 'calls', to: 'calls#create'
           # get 'me/commands' # TO IMPLEMENT
           # post 'me/commands', to: 'commands#create' # TO IMPLEMENT
         end
+      end
+
+      # Clients namespace at global route
+      resources :clients, only: [:index, :show] do
         resources :delivery_addresses, shallow: true
         resources :invitations, shallow: true
         resources :phones, shallow: true
@@ -32,13 +37,6 @@ Rails.application.routes.draw do
 
       # Chef namespace at global route
       resources :chefs, only: [:index, :show] do
-        collection do
-          get 'me'
-          get 'me/calls'
-          post 'me/calls', to: 'calls#create'
-          get 'me/phones'
-          post 'me/phones', to: 'phones#create'
-        end
 
         resources :calls, shallow: true
         resources :phones, shallow: true
