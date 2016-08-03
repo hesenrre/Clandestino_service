@@ -37,7 +37,8 @@ gem 'jbuilder', '~> 2.5'
 # Use Devise for authentication
 gem 'devise'
 # Use Doorkeeper for oauth authentication
-gem 'doorkeeper'
+gem 'devise-doorkeeper'
+# gem 'doorkeeper'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
