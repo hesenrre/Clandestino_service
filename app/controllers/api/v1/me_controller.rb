@@ -1,10 +1,7 @@
 class Api::V1::MeController < Api::V1::BaseController
   before_action :me
 
-  def phones
-    @phones = @me.phones
-  end
-
+  # BEGIN CLIENT METHODS
   def interests
     @interests = @me.interests
   end
@@ -20,9 +17,27 @@ class Api::V1::MeController < Api::V1::BaseController
   def invitations
     @invitations = @me.invitations
   end
+  # END CLIENT METHODS
+
+  # BEGIN CHEF METHODS
+  def calls
+    @calls = @me.calls
+  end
+  # END CHEF METHODS
+
+  # BEGIN GLOBAL METHODS
+  def phones
+    @phones = @me.phones
+  end
+  # END GLOBAL METHODS
+
 
   private
   def me
-    @me = Client.find(1)
+    @me = if request.original_url.include? "clients"
+      Client.find(1)
+    else
+      Chef.find(1)
+    end
   end
 end

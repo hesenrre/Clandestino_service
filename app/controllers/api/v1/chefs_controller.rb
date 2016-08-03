@@ -6,4 +6,8 @@ class Api::V1::ChefsController < Api::V1::BaseController
   def show
     @chef = Call.find(params[:id])
   end
+
+  def me
+    @me = Chef.find(1)
+  end
 end
