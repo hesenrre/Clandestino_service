@@ -28,6 +28,8 @@ class CreateDoorkeeperTables < ActiveRecord::Migration
       :oauth_applications,
       column: :application_id
     )
+    add_foreign_key :oauth_access_grants, :clients, column: :resource_owner_id
+    add_foreign_key :oauth_access_grants, :chefs, column: :resource_owner_id
 
     create_table :oauth_access_tokens do |t|
       t.integer  :resource_owner_id
@@ -64,5 +66,7 @@ class CreateDoorkeeperTables < ActiveRecord::Migration
       :oauth_applications,
       column: :application_id
     )
+    add_foreign_key :oauth_access_tokens, :clients, column: :resource_owner_id
+    add_foreign_key :oauth_access_tokens, :chefs, column: :resource_owner_id
   end
 end
