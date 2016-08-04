@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+
+
   use_doorkeeper
   devise_for :chefs
   devise_for :clients
@@ -44,4 +46,5 @@ Rails.application.routes.draw do
       resources :addresses, except: [:index, :create, :new]
     end
   end
+  root 'welcome#index'  
 end
