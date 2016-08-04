@@ -12,6 +12,7 @@ gem 'sass-rails', '~> 5.0'
 # Use Slim lang for html templating
 gem 'slim-rails'
 # Use AngularJS for frondend
+gem 'sprockets', '3.6.3' #using fixed version to avoid deprectaion message
 gem 'angularjs-rails'
 gem 'angular-rails-templates'
 # gem 'angular_rails_csrf'
