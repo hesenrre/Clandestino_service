@@ -1,7 +1,9 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  chef_id: 1
-  meal_event_id: 1
-  status: 1 #confirmed status
-  priority: 1
+<% 1.upto(6) do |i| %>
+call<%= i%>:
+  user: chef<%= (a = i % 3) == 0 ? 3 : a %>
+  meal_event: event<% i % 2 == 0 ? 2 : 1 %>
+  status: <%= rand(3)%>
+  priority: <%= (a = i % 3) == 0 ? 3 : a %>
+<% end %>
