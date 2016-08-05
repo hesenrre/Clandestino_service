@@ -1,6 +1,26 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  user_id: 1
-  address_id: 1
-  label: Client Home
+da1:
+  user: client1
+  address: home1
+  label: Home
+
+da2:
+  user: client1
+  address: office1
+  label: Oficina
+
+da3:
+  user: client2
+  address: home2
+  label: Mi casa
+
+da4:
+  user: client2
+  address: office2
+  label: Samara
+
+da5:
+  user: client3
+  address: office1
+  label: Nortel Networks
