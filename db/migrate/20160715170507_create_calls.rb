@@ -1,8 +1,8 @@
 class CreateCalls < ActiveRecord::Migration[5.0]
   def change
     create_table :calls do |t|
-      t.integer :chef_id
-      t.integer :meal_event_id
+      t.belongs_to :user, index: true
+      t.belongs_to :meal_event, index: true
       t.integer :status, null: false, default: 0
       t.integer :priority
 

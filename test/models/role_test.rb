@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class FoodPreferenceTest < ActiveSupport::TestCase
+class RoleTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

@@ -1,0 +1,26 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+# This model initially had no columns defined. If you add columns to the
+# model remove the '{}' from the fixture names and add the columns immediately
+# below each fixture, per the syntax in the comments below
+#
+<% user_types = %w(client chef provider)
+   names = ["Juan Perez", "Julia Alcazar", "Maximiliano Cruz",
+            "Mirna Bastida", "Arturo Gallegos", "Demetrio Cruz",
+            "Erlik Corona", "Liz Gonzales", "Emma Cruz"] %>
+<% np,count = 0,1 %>
+<% names.each do |name|
+  count, np = 1, np +1 if count > 3
+  label = "#{user_types[np]}#{count}"
+%>
+
+<%= label %>:
+  name: <%= name %>
+  photo: http://aws.amazon.com/persons/<%= "#{label}"%>.jpg
+  email: <%= "#{label}"%>@gmail.com
+  encrypted_password: $2a$11$47JW1j2vjRie7xAG5yHBAe6LdvcdEaUyRQjOeqXhnQZpobaomrFIS
+
+<%
+  count = count + 1
+  end 
+%>

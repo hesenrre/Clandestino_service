@@ -3,7 +3,7 @@
 one:
   id: 1
   meal_event_id: 1
-  client_id: 1
+  user_id: 1
   event_rate: 8.5
   chef_rate: 9.0
   meal_rate: 9.0
@@ -13,7 +13,7 @@ one:
 two:
   id: 2
   meal_event_id: 1
-  client_id: 2
+  user_id: 2
   event_rate: 9.0
   chef_rate: 9.0
   meal_rate: 9.0
@@ -23,7 +23,7 @@ two:
 tree:
   id: 3
   meal_event_id: 2
-  client_id: 1
+  user_id: 1
   event_rate: 0
   chef_rate: 0
   meal_rate: 0
