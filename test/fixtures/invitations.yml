@@ -1,31 +1,12 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  id: 1
-  meal_event_id: 1
-  user_id: 1
-  event_rate: 8.5
-  chef_rate: 9.0
-  meal_rate: 9.0
-  status: 1
-  guest: 1
-
-two:
-  id: 2
-  meal_event_id: 1
-  user_id: 2
-  event_rate: 9.0
-  chef_rate: 9.0
-  meal_rate: 9.0
-  status: 0
-  guest: 2
-
-tree:
-  id: 3
-  meal_event_id: 2
-  user_id: 1
-  event_rate: 0
-  chef_rate: 0
-  meal_rate: 0
-  status: 0
-  guest: 0
+<% 1.upto(6) do |i| %>
+invitation<%= i%>:
+  user: client<%= (a = i % 3) == 0 ? 3 : a %>
+  meal_event: event<% i % 2 == 0 ? 2 : 1 %>
+  event_rate: <%= "#{rand(9)}.#{rand(9)}" %>
+  chef_rate: <%= "#{rand(9)}.#{rand(9)}" %>
+  meal_rate: <%= "#{rand(9)}.#{rand(9)}" %>
+  status: rand(4)
+  guest: rand(3)
+<% end %>
