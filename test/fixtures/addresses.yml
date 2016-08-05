@@ -1,7 +1,6 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-client:
-  id: 1
+home1:
   street: Xola
   no_ext: 304
   neighborhood: Del Valle
@@ -11,8 +10,7 @@ client:
   lat: 9.99
   lng: 9.99
 
-chef:
-  id: 2
+home2:
   street: Escocia
   no_ext: 29
   no_int: 302
@@ -23,8 +21,7 @@ chef:
   lat: 9.99
   lng: 9.99
 
-event:
-  id: 3
+office1:
   street: Lucerna
   no_ext: 21
   neighborhood: Cuahutemoc
@@ -34,13 +31,33 @@ event:
   lat: 9.99
   lng: 9.99
 
-provider:
-  id: 4
+office2:
   street: Av Colonia del Valle
   no_ext: 204
   neighborhood: Del Valle
   city: Mexico
   state: DF
+  country: Mexico
+  lat: 9.99
+  lng: 9.99
+
+venue1:
+  street: Av Santa Fe
+  no_ext: 3560
+  no_int: 1
+  neighborhood: Cuajimalpa
+  city: Mexico
+  state: DF
+  country: Mexico
+  lat: 9.99
+  lng: 9.99
+
+venue2:
+  street: Parque fundidora
+  no_ext: 1
+  neighborhood: Fundidores
+  city: Monterrey
+  state: Nuevo Leon
   country: Mexico
   lat: 9.99
   lng: 9.99
