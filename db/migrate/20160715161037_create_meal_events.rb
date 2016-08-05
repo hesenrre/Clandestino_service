@@ -12,7 +12,7 @@ class CreateMealEvents < ActiveRecord::Migration[5.0]
       t.text :description
       t.text :instructions
       t.text :rules
-      t.integer :address_id
+      t.belongs_to :address, index: true
       t.integer :status, null: false, default: 0
 
       t.timestamps

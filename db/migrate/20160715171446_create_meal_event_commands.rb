@@ -1,7 +1,7 @@
 class CreateMealEventCommands < ActiveRecord::Migration[5.0]
   def change
     create_table :meal_event_commands do |t|
-      t.integer :invitation_id
+      t.belongs_to :invitation, index: true
       t.integer :quantity
       t.integer :table_no
 
