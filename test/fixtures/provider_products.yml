@@ -1,16 +1,16 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  provider_id: 1
-  product_id: 1
+  provider: provider1
+  product: one
   unit_price: 10.99
   quantity: 5
   total_price: 54.95
   purchase_date: 2016-07-15 11:23:02
 
 two:
-  provider_id: 1
-  product_id: 2
+  provider: provider1
+  product: two
   unit_price: 109.99
   quantity: 3
   total_price: 329.97

@@ -1,9 +1,9 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  name: MyString
+event_gallery1:
+  name: event gallery
   description: MyString
 
-two:
-  name: MyString
+chef_gallery1:
+  name: chef gallery
   description: MyString

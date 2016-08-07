@@ -1,36 +1,37 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  id: 1
   label: Politics
   icon: http://aws.amazon.com/interests/politics.jpg
+  users: client1, client3
+
 
 two:
-  id: 2
   label: Computer Science
   icon: http://aws.amazon.com/interests/cs.jpg
+  users: client2
 
 three:
-  id: 3
   label: Music
   icon: http://aws.amazon.com/interests/music.jpg
+  users: client3, client2
 
 four:
-  id: 4
   label: Ecology
   icon: http://aws.amazon.com/interests/ecology.jpg
+  users: client1, client2
 
 five:
-  id: 5
   label: Technology
   icon: http://aws.amazon.com/interests/tech.jpg
+  users: client3, client2
 
 six:
-  id: 6
   label: Pockemons
   icon: http://aws.amazon.com/interests/pockemons.jpg
+  users: client1
 
 seven:
-  id: 7
   label: TV Series
   icon: http://aws.amazon.com/interests/tv_series.jpg
+  users: client3

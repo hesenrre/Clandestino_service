@@ -1,9 +1,16 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  label: MyString
-  description: MyText
+clients:
+  label: Clients
+  description: Clients role
+  users: client1, client2, client3
 
-two:
-  label: MyString
-  description: MyText
+chefs:
+  label: Chefs
+  description: Chefs role
+  users: chef1, chef2, chef3
+
+providers:
+  label: Providers
+  description: Providers role
+  users: provider1, provider2, provider3

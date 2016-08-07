@@ -1,4 +1,3 @@
 class Interest < ApplicationRecord
-  has_many :client_interests
-  has_many :clients, through: :client_interests
+  has_and_belongs_to_many :users
 end

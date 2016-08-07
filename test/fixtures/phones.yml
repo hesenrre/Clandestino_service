@@ -1,40 +1,52 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  id: 1
   number: 53928595
   label: home
-  person_id: 1
+  user: client1
 
 two:
-  id: 2
   number: 5538299510
   ext: 345
   label: office
-  person_id: 2
+  user: client2
 
 three:
-  id: 3
   number: 5538214123
   label: home
-  person_id: 3
+  user: client3
 
 four:
-  id: 4
   number: 5523423562
   ext: 5643
   label: office
-  person_id: 4
+  user: chef1
 
 five:
-  id: 5
   number: 5523423422
   label: home
-  person_id: 5
+  user: chef2
 
 six:
-  id: 6
   number: 5523423623
   ext: 673
   label: office
-  person_id: 6
+  user: chef3
+
+seven:
+  number: 5523423623
+  ext: 673
+  label: Almacen
+  user: provider1
+
+eight:
+  number: 5523423623
+  ext: 673
+  label: Bodega
+  user: provider2
+
+nine:
+  number: 5523423623
+  ext: 673
+  label: Matriz
+  user: provider3

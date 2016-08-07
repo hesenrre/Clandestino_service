@@ -1,15 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  id: 1
-  meal_event_id: 1
-  product_id: 1
+  meal_event: event1
+  product: one
   price: 9.99
   quantity: 10
 
 two:
-  id: 2
-  meal_event_id: 1
-  product_id: 2
+  meal_event: event1
+  product: two
   price: 9.99
   quantity: 20

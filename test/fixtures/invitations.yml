@@ -1,9 +1,10 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 <% 1.upto(6) do |i| %>
+<% event = "event#{ i % 2 == 0 ? 2 : 1 }" %>
 invitation<%= i%>:
   user: client<%= (a = i % 3) == 0 ? 3 : a %>
-  meal_event: event<% i % 2 == 0 ? 2 : 1 %>
+  meal_event: <%= event%> 
   event_rate: <%= "#{rand(9)}.#{rand(9)}" %>
   chef_rate: <%= "#{rand(9)}.#{rand(9)}" %>
   meal_rate: <%= "#{rand(9)}.#{rand(9)}" %>

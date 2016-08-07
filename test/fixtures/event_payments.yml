@@ -1,8 +1,8 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  meal_event_command_id: 1
-  type: 1
+  meal_event_command: command1 
+  payment_type: 1
   transaction_date: 2016-07-15 12:20:55
   transaction_id: Y2VkaXRjYXJk
   reference: cmVmZXJlbmNl

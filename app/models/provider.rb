@@ -4,6 +4,7 @@ class Provider < ApplicationRecord
   has_many :event_providers
   has_many :meal_events, through: :event_providers
   has_many :provider_addresses
+  has_many :addresses, through: :provider_addresses
   has_many :provider_phones
   has_many :phones, through: :provider_phones
   has_many :provider_products

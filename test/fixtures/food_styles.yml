@@ -1,31 +1,28 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  id: 1
   label: Omnivorous
   icon: http://aws.amazon.com/clandestino/omni.jpg
+  users: client1, client2
 
 two:
-  id: 2
   label: Vegetarian
   icon: http://aws.amazon.com/clandestino/veggie.jpg
+  users: client3
 
 two:
-  id: 3
   label: Fructarian
   icon: http://aws.amazon.com/clandestino/fructarian.jpg
 
 two:
-  id: 4
   label: Itallian
   icon: http://aws.amazon.com/clandestino/itallian.jpg
-
+  users: client1
 two:
-  id: 5
   label: French
   icon: http://aws.amazon.com/clandestino/french.jpg
 
 two:
-  id: 6
   label: Sensorial
   icon: http://aws.amazon.com/clandestino/sensorial.jpg
+  users: client2, client3

@@ -1,21 +1,17 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 winer:
-  id: 1
   label: Winer
   description: Proveedor de vino
 
 beer:
-  id: 2
   label: Beer
   description: Proveedor de cerveza
 
 cattering:
-  id: 3
   label: Cattering
   description: Proveedor de Mesas
 
 music:
-  id: 4
   label: Music
   description: Proveedor de musica

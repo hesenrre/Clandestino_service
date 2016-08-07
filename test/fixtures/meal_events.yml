@@ -12,7 +12,7 @@ event1:
   description: Test event
   instructions: Test instructions
   rules: Test rules
-  address_id: 3
+  address: venue1
 
 event2:
   name: Future Event
@@ -26,4 +26,4 @@ event2:
   description: future event
   instructions: instructions
   rules: rules
-  address_id: 4
+  address: venue2

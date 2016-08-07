@@ -1,11 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  meal_event_command_id: 1
-  event_product_id: 1
+  meal_event_command: command1
+  event_product: one
   quantity: 1
 
 two:
-  meal_event_command_id: 1
-  event_product_id: 2
+  meal_event_command: command2
+  event_product: one
   quantity: 1

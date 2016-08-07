@@ -1,13 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  id: 1
-  invitation_id: 1
+command1:
+  invitation: invitation1
   quantity: 5
   table_no: 1
 
-two:
-  id: 2
-  invitation_id: 2
+command2:
+  invitation: invitation2
   quantity: 10
   table_no: 2

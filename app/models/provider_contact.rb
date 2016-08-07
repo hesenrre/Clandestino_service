@@ -1,4 +1,4 @@
 class ProviderContact < ApplicationRecord
   belongs_to :provider
-  belongs_to :person
+  belongs_to :user
 end
