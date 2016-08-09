@@ -1,5 +1,4 @@
-json.extract! @me, :id, :email
-json.extract! @me.person, :name, :photo
+json.extract! @me, :id, :email, :name, :photo
 json.phones phones_api_v1_me_index_url(format: :json)
 if @user_type == "client"
   json.interests interests_api_v1_me_index_url(format: :json)
