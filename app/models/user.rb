@@ -22,11 +22,15 @@ class User < ApplicationRecord
   # has_many :chef_media_groups, through: :chef_galleries
 
   def active_call
-    return is_on_time(calls.last) ? calls.last : nil
+    return is_on_time(self.calls.last) ? self.calls.last : nil
   end
 
   def active_invitation
-    return is_on_time(invitations.last) ? invitations.last : nil
+    return is_on_time(self.invitations.last) ? self.invitations.last : nil
+  end
+
+  def is_in_roles(roles)
+    not (self.roles.map{ |r| r.label.downcase.to_sym} & roles).empty?
   end
 
   private
