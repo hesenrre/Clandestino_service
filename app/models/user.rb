@@ -29,7 +29,7 @@ class User < ApplicationRecord
     return is_on_time(self.invitations.last) ? self.invitations.last : nil
   end
 
-  def is_in_roles(roles)
+  def is_in_roles(*roles)
     not (self.roles.map{ |r| r.label.downcase.to_sym} & roles).empty?
   end
 
