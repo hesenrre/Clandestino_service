@@ -1,0 +1,522 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5B8224901D5E2AB600AF669D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B82248F1D5E2AB600AF669D /* AppDelegate.swift */; };
+		5B8224921D5E2AB600AF669D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8224911D5E2AB600AF669D /* ViewController.swift */; };
+		5B8224951D5E2AB600AF669D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B8224931D5E2AB600AF669D /* Main.storyboard */; };
+		5B8224981D5E2AB600AF669D /* Clandestino.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5B8224961D5E2AB600AF669D /* Clandestino.xcdatamodeld */; };
+		5B82249A1D5E2AB600AF669D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B8224991D5E2AB600AF669D /* Assets.xcassets */; };
+		5B82249D1D5E2AB600AF669D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B82249B1D5E2AB600AF669D /* LaunchScreen.storyboard */; };
+		5B8224A81D5E2AB600AF669D /* ClandestinoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8224A71D5E2AB600AF669D /* ClandestinoTests.swift */; };
+		5B8224B31D5E2AB600AF669D /* ClandestinoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8224B21D5E2AB600AF669D /* ClandestinoUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5B8224A41D5E2AB600AF669D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B8224841D5E2AB600AF669D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B82248B1D5E2AB600AF669D;
+			remoteInfo = Clandestino;
+		};
+		5B8224AF1D5E2AB600AF669D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B8224841D5E2AB600AF669D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B82248B1D5E2AB600AF669D;
+			remoteInfo = Clandestino;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5B82248C1D5E2AB600AF669D /* Clandestino.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clandestino.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B82248F1D5E2AB600AF669D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5B8224911D5E2AB600AF669D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5B8224941D5E2AB600AF669D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5B8224971D5E2AB600AF669D /* Clandestino.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Clandestino.xcdatamodel; sourceTree = "<group>"; };
+		5B8224991D5E2AB600AF669D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5B82249C1D5E2AB600AF669D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5B82249E1D5E2AB600AF669D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B8224A31D5E2AB600AF669D /* ClandestinoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClandestinoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B8224A71D5E2AB600AF669D /* ClandestinoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClandestinoTests.swift; sourceTree = "<group>"; };
+		5B8224A91D5E2AB600AF669D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B8224AE1D5E2AB600AF669D /* ClandestinoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClandestinoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B8224B21D5E2AB600AF669D /* ClandestinoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClandestinoUITests.swift; sourceTree = "<group>"; };
+		5B8224B41D5E2AB600AF669D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5B8224891D5E2AB600AF669D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B8224A01D5E2AB600AF669D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B8224AB1D5E2AB600AF669D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5B8224831D5E2AB600AF669D = {
+			isa = PBXGroup;
+			children = (
+				5B82248E1D5E2AB600AF669D /* Clandestino */,
+				5B8224A61D5E2AB600AF669D /* ClandestinoTests */,
+				5B8224B11D5E2AB600AF669D /* ClandestinoUITests */,
+				5B82248D1D5E2AB600AF669D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5B82248D1D5E2AB600AF669D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5B82248C1D5E2AB600AF669D /* Clandestino.app */,
+				5B8224A31D5E2AB600AF669D /* ClandestinoTests.xctest */,
+				5B8224AE1D5E2AB600AF669D /* ClandestinoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5B82248E1D5E2AB600AF669D /* Clandestino */ = {
+			isa = PBXGroup;
+			children = (
+				5B82248F1D5E2AB600AF669D /* AppDelegate.swift */,
+				5B8224911D5E2AB600AF669D /* ViewController.swift */,
+				5B8224931D5E2AB600AF669D /* Main.storyboard */,
+				5B8224991D5E2AB600AF669D /* Assets.xcassets */,
+				5B82249B1D5E2AB600AF669D /* LaunchScreen.storyboard */,
+				5B82249E1D5E2AB600AF669D /* Info.plist */,
+				5B8224961D5E2AB600AF669D /* Clandestino.xcdatamodeld */,
+			);
+			path = Clandestino;
+			sourceTree = "<group>";
+		};
+		5B8224A61D5E2AB600AF669D /* ClandestinoTests */ = {
+			isa = PBXGroup;
+			children = (
+				5B8224A71D5E2AB600AF669D /* ClandestinoTests.swift */,
+				5B8224A91D5E2AB600AF669D /* Info.plist */,
+			);
+			path = ClandestinoTests;
+			sourceTree = "<group>";
+		};
+		5B8224B11D5E2AB600AF669D /* ClandestinoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5B8224B21D5E2AB600AF669D /* ClandestinoUITests.swift */,
+				5B8224B41D5E2AB600AF669D /* Info.plist */,
+			);
+			path = ClandestinoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5B82248B1D5E2AB600AF669D /* Clandestino */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B8224B71D5E2AB600AF669D /* Build configuration list for PBXNativeTarget "Clandestino" */;
+			buildPhases = (
+				5B8224881D5E2AB600AF669D /* Sources */,
+				5B8224891D5E2AB600AF669D /* Frameworks */,
+				5B82248A1D5E2AB600AF669D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Clandestino;
+			productName = Clandestino;
+			productReference = 5B82248C1D5E2AB600AF669D /* Clandestino.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5B8224A21D5E2AB600AF669D /* ClandestinoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B8224BA1D5E2AB600AF669D /* Build configuration list for PBXNativeTarget "ClandestinoTests" */;
+			buildPhases = (
+				5B82249F1D5E2AB600AF669D /* Sources */,
+				5B8224A01D5E2AB600AF669D /* Frameworks */,
+				5B8224A11D5E2AB600AF669D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5B8224A51D5E2AB600AF669D /* PBXTargetDependency */,
+			);
+			name = ClandestinoTests;
+			productName = ClandestinoTests;
+			productReference = 5B8224A31D5E2AB600AF669D /* ClandestinoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5B8224AD1D5E2AB600AF669D /* ClandestinoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B8224BD1D5E2AB600AF669D /* Build configuration list for PBXNativeTarget "ClandestinoUITests" */;
+			buildPhases = (
+				5B8224AA1D5E2AB600AF669D /* Sources */,
+				5B8224AB1D5E2AB600AF669D /* Frameworks */,
+				5B8224AC1D5E2AB600AF669D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5B8224B01D5E2AB600AF669D /* PBXTargetDependency */,
+			);
+			name = ClandestinoUITests;
+			productName = ClandestinoUITests;
+			productReference = 5B8224AE1D5E2AB600AF669D /* ClandestinoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5B8224841D5E2AB600AF669D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Roonin Labs S de RL de CV";
+				TargetAttributes = {
+					5B82248B1D5E2AB600AF669D = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					5B8224A21D5E2AB600AF669D = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 5B82248B1D5E2AB600AF669D;
+					};
+					5B8224AD1D5E2AB600AF669D = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 5B82248B1D5E2AB600AF669D;
+					};
+				};
+			};
+			buildConfigurationList = 5B8224871D5E2AB600AF669D /* Build configuration list for PBXProject "Clandestino" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5B8224831D5E2AB600AF669D;
+			productRefGroup = 5B82248D1D5E2AB600AF669D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5B82248B1D5E2AB600AF669D /* Clandestino */,
+				5B8224A21D5E2AB600AF669D /* ClandestinoTests */,
+				5B8224AD1D5E2AB600AF669D /* ClandestinoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5B82248A1D5E2AB600AF669D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B82249D1D5E2AB600AF669D /* LaunchScreen.storyboard in Resources */,
+				5B82249A1D5E2AB600AF669D /* Assets.xcassets in Resources */,
+				5B8224951D5E2AB600AF669D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B8224A11D5E2AB600AF669D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B8224AC1D5E2AB600AF669D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5B8224881D5E2AB600AF669D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B8224921D5E2AB600AF669D /* ViewController.swift in Sources */,
+				5B8224901D5E2AB600AF669D /* AppDelegate.swift in Sources */,
+				5B8224981D5E2AB600AF669D /* Clandestino.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B82249F1D5E2AB600AF669D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B8224A81D5E2AB600AF669D /* ClandestinoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B8224AA1D5E2AB600AF669D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B8224B31D5E2AB600AF669D /* ClandestinoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5B8224A51D5E2AB600AF669D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B82248B1D5E2AB600AF669D /* Clandestino */;
+			targetProxy = 5B8224A41D5E2AB600AF669D /* PBXContainerItemProxy */;
+		};
+		5B8224B01D5E2AB600AF669D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B82248B1D5E2AB600AF669D /* Clandestino */;
+			targetProxy = 5B8224AF1D5E2AB600AF669D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5B8224931D5E2AB600AF669D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B8224941D5E2AB600AF669D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5B82249B1D5E2AB600AF669D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B82249C1D5E2AB600AF669D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5B8224B51D5E2AB600AF669D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5B8224B61D5E2AB600AF669D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5B8224B81D5E2AB600AF669D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Clandestino/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.roonin.Clandestino;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5B8224B91D5E2AB600AF669D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Clandestino/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.roonin.Clandestino;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5B8224BB1D5E2AB600AF669D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ClandestinoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.roonin.ClandestinoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Clandestino.app/Clandestino";
+			};
+			name = Debug;
+		};
+		5B8224BC1D5E2AB600AF669D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ClandestinoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.roonin.ClandestinoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Clandestino.app/Clandestino";
+			};
+			name = Release;
+		};
+		5B8224BE1D5E2AB600AF669D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ClandestinoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.roonin.ClandestinoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Clandestino;
+			};
+			name = Debug;
+		};
+		5B8224BF1D5E2AB600AF669D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ClandestinoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.roonin.ClandestinoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Clandestino;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5B8224871D5E2AB600AF669D /* Build configuration list for PBXProject "Clandestino" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B8224B51D5E2AB600AF669D /* Debug */,
+				5B8224B61D5E2AB600AF669D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B8224B71D5E2AB600AF669D /* Build configuration list for PBXNativeTarget "Clandestino" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B8224B81D5E2AB600AF669D /* Debug */,
+				5B8224B91D5E2AB600AF669D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5B8224BA1D5E2AB600AF669D /* Build configuration list for PBXNativeTarget "ClandestinoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B8224BB1D5E2AB600AF669D /* Debug */,
+				5B8224BC1D5E2AB600AF669D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5B8224BD1D5E2AB600AF669D /* Build configuration list for PBXNativeTarget "ClandestinoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B8224BE1D5E2AB600AF669D /* Debug */,
+				5B8224BF1D5E2AB600AF669D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5B8224961D5E2AB600AF669D /* Clandestino.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5B8224971D5E2AB600AF669D /* Clandestino.xcdatamodel */,
+			);
+			currentVersion = 5B8224971D5E2AB600AF669D /* Clandestino.xcdatamodel */;
+			path = Clandestino.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5B8224841D5E2AB600AF669D /* Project object */;
+}
