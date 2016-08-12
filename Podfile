@@ -6,6 +6,7 @@ target 'Clandestino' do
   use_frameworks!
 
   # Pods for Clandestino
+  pod 'OAuthSwift'
 
   target 'ClandestinoTests' do
     inherit! :search_paths
