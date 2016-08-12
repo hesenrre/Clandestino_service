@@ -1,6 +1,8 @@
 class Api::V1::MeController < Api::V1::BaseController
   before_action :authenticate_user!
-  before_action -> {authorized_roles :clients}
+  before_action -> {authorized_roles :clients, :chefs}, only: [:index, :phones]
+  before_action -> {authorized_roles :clients}, except: [:index, :calls]
+  before_action -> {authorized_roles :chefs}, only: [:calls]
 
   def index
     @me = current_user
