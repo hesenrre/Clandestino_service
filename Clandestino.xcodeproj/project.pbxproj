@@ -11,13 +11,13 @@
 		42DCC5C3E6E0654D309ACA85 /* Pods_ClandestinoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8EBED4B43E9499F0C938785 /* Pods_ClandestinoUITests.framework */; };
 		4B64FA3A3A8722E50CBC9688 /* Pods_ClandestinoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 530885AB55B5091A26B242D4 /* Pods_ClandestinoTests.framework */; };
 		5B8224901D5E2AB600AF669D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B82248F1D5E2AB600AF669D /* AppDelegate.swift */; };
-		5B8224921D5E2AB600AF669D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8224911D5E2AB600AF669D /* ViewController.swift */; };
 		5B8224951D5E2AB600AF669D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B8224931D5E2AB600AF669D /* Main.storyboard */; };
 		5B8224981D5E2AB600AF669D /* Clandestino.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5B8224961D5E2AB600AF669D /* Clandestino.xcdatamodeld */; };
 		5B82249A1D5E2AB600AF669D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B8224991D5E2AB600AF669D /* Assets.xcassets */; };
 		5B82249D1D5E2AB600AF669D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B82249B1D5E2AB600AF669D /* LaunchScreen.storyboard */; };
 		5B8224A81D5E2AB600AF669D /* ClandestinoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8224A71D5E2AB600AF669D /* ClandestinoTests.swift */; };
 		5B8224B31D5E2AB600AF669D /* ClandestinoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8224B21D5E2AB600AF669D /* ClandestinoUITests.swift */; };
+		5B9D2A571D5E310D0096CA81 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D2A561D5E310D0096CA81 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +45,6 @@
 		530885AB55B5091A26B242D4 /* Pods_ClandestinoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClandestinoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B82248C1D5E2AB600AF669D /* Clandestino.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clandestino.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B82248F1D5E2AB600AF669D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5B8224911D5E2AB600AF669D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5B8224941D5E2AB600AF669D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5B8224971D5E2AB600AF669D /* Clandestino.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Clandestino.xcdatamodel; sourceTree = "<group>"; };
 		5B8224991D5E2AB600AF669D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,6 +56,7 @@
 		5B8224AE1D5E2AB600AF669D /* ClandestinoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClandestinoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B8224B21D5E2AB600AF669D /* ClandestinoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClandestinoUITests.swift; sourceTree = "<group>"; };
 		5B8224B41D5E2AB600AF669D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B9D2A561D5E310D0096CA81 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = controllers/HomeViewController.swift; sourceTree = "<group>"; };
 		A138D3CA35D220F777804405 /* Pods-Clandestino.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clandestino.release.xcconfig"; path = "Pods/Target Support Files/Pods-Clandestino/Pods-Clandestino.release.xcconfig"; sourceTree = "<group>"; };
 		A8EBED4B43E9499F0C938785 /* Pods_ClandestinoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClandestinoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D858D97B3F17F9F861788592 /* Pods-Clandestino.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clandestino.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Clandestino/Pods-Clandestino.debug.xcconfig"; sourceTree = "<group>"; };
@@ -117,12 +117,12 @@
 			isa = PBXGroup;
 			children = (
 				5B82248F1D5E2AB600AF669D /* AppDelegate.swift */,
-				5B8224911D5E2AB600AF669D /* ViewController.swift */,
 				5B8224931D5E2AB600AF669D /* Main.storyboard */,
 				5B8224991D5E2AB600AF669D /* Assets.xcassets */,
 				5B82249B1D5E2AB600AF669D /* LaunchScreen.storyboard */,
 				5B82249E1D5E2AB600AF669D /* Info.plist */,
 				5B8224961D5E2AB600AF669D /* Clandestino.xcdatamodeld */,
+				5B9D2A561D5E310D0096CA81 /* HomeViewController.swift */,
 			);
 			path = Clandestino;
 			sourceTree = "<group>";
@@ -430,9 +430,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B8224921D5E2AB600AF669D /* ViewController.swift in Sources */,
 				5B8224901D5E2AB600AF669D /* AppDelegate.swift in Sources */,
 				5B8224981D5E2AB600AF669D /* Clandestino.xcdatamodeld in Sources */,
+				5B9D2A571D5E310D0096CA81 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
