@@ -1,6 +1,6 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-event1:
+event_1:
   name: Test Event
   event_date: 2016-07-15 11:10:37 UTC
   confirmation_deadline: 2016-07-15 11:10:37 UTC
@@ -14,7 +14,7 @@ event1:
   rules: Test rules
   address: venue1
 
-event2:
+event_2:
   name: Future Event
   event_date: <%= Time.now + 15.days %>
   confirmation_deadline: <%= Time.now + 8.days %>

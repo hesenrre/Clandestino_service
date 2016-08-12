@@ -1,7 +1,7 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  meal_event: event1
+  meal_event: event_1
   provider: provider1
   contract: contract_provider1
   status: 1
@@ -9,7 +9,7 @@ one:
   execution_time: 2016-07-15 12:15:49
 
 two:
-  meal_event: event2
+  meal_event: event_2
   provider: provider1
   contract: contract_provider1
   status: 1
