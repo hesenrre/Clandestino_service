@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1171598FD9696B7951930646 /* Pods_Clandestino.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 166200C1A28BAEF96299C3C6 /* Pods_Clandestino.framework */; };
+		42DCC5C3E6E0654D309ACA85 /* Pods_ClandestinoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8EBED4B43E9499F0C938785 /* Pods_ClandestinoUITests.framework */; };
+		4B64FA3A3A8722E50CBC9688 /* Pods_ClandestinoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 530885AB55B5091A26B242D4 /* Pods_ClandestinoTests.framework */; };
 		5B8224901D5E2AB600AF669D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B82248F1D5E2AB600AF669D /* AppDelegate.swift */; };
 		5B8224921D5E2AB600AF669D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8224911D5E2AB600AF669D /* ViewController.swift */; };
 		5B8224951D5E2AB600AF669D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B8224931D5E2AB600AF669D /* Main.storyboard */; };
@@ -35,6 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		166200C1A28BAEF96299C3C6 /* Pods_Clandestino.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Clandestino.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		450C60DE7887DA08790DC2C2 /* Pods-ClandestinoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClandestinoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ClandestinoTests/Pods-ClandestinoTests.release.xcconfig"; sourceTree = "<group>"; };
+		481B9B9911EB2A50B31CA68B /* Pods-ClandestinoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClandestinoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ClandestinoUITests/Pods-ClandestinoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4ECCD8AFF766BA729883A253 /* Pods-ClandestinoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClandestinoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ClandestinoTests/Pods-ClandestinoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		530885AB55B5091A26B242D4 /* Pods_ClandestinoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClandestinoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B82248C1D5E2AB600AF669D /* Clandestino.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clandestino.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B82248F1D5E2AB600AF669D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B8224911D5E2AB600AF669D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +57,10 @@
 		5B8224AE1D5E2AB600AF669D /* ClandestinoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClandestinoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B8224B21D5E2AB600AF669D /* ClandestinoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClandestinoUITests.swift; sourceTree = "<group>"; };
 		5B8224B41D5E2AB600AF669D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A138D3CA35D220F777804405 /* Pods-Clandestino.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clandestino.release.xcconfig"; path = "Pods/Target Support Files/Pods-Clandestino/Pods-Clandestino.release.xcconfig"; sourceTree = "<group>"; };
+		A8EBED4B43E9499F0C938785 /* Pods_ClandestinoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClandestinoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D858D97B3F17F9F861788592 /* Pods-Clandestino.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clandestino.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Clandestino/Pods-Clandestino.debug.xcconfig"; sourceTree = "<group>"; };
+		FCFF9EA606EC2A474219A6F3 /* Pods-ClandestinoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClandestinoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ClandestinoUITests/Pods-ClandestinoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1171598FD9696B7951930646 /* Pods_Clandestino.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B64FA3A3A8722E50CBC9688 /* Pods_ClandestinoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42DCC5C3E6E0654D309ACA85 /* Pods_ClandestinoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +98,8 @@
 				5B8224A61D5E2AB600AF669D /* ClandestinoTests */,
 				5B8224B11D5E2AB600AF669D /* ClandestinoUITests */,
 				5B82248D1D5E2AB600AF669D /* Products */,
+				C33F12CE1DBC2DDCA5AFF29A /* Pods */,
+				A5C15379ED5C9349507C8A9C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +145,29 @@
 			path = ClandestinoUITests;
 			sourceTree = "<group>";
 		};
+		A5C15379ED5C9349507C8A9C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				166200C1A28BAEF96299C3C6 /* Pods_Clandestino.framework */,
+				530885AB55B5091A26B242D4 /* Pods_ClandestinoTests.framework */,
+				A8EBED4B43E9499F0C938785 /* Pods_ClandestinoUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C33F12CE1DBC2DDCA5AFF29A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D858D97B3F17F9F861788592 /* Pods-Clandestino.debug.xcconfig */,
+				A138D3CA35D220F777804405 /* Pods-Clandestino.release.xcconfig */,
+				4ECCD8AFF766BA729883A253 /* Pods-ClandestinoTests.debug.xcconfig */,
+				450C60DE7887DA08790DC2C2 /* Pods-ClandestinoTests.release.xcconfig */,
+				FCFF9EA606EC2A474219A6F3 /* Pods-ClandestinoUITests.debug.xcconfig */,
+				481B9B9911EB2A50B31CA68B /* Pods-ClandestinoUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +175,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5B8224B71D5E2AB600AF669D /* Build configuration list for PBXNativeTarget "Clandestino" */;
 			buildPhases = (
+				16DE7FDBEC4D0759A6005C8A /* [CP] Check Pods Manifest.lock */,
 				5B8224881D5E2AB600AF669D /* Sources */,
 				5B8224891D5E2AB600AF669D /* Frameworks */,
 				5B82248A1D5E2AB600AF669D /* Resources */,
+				B1FE93CB7FC295B1645F0E8A /* [CP] Embed Pods Frameworks */,
+				30B79C1DAB495AE611B93C11 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +195,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5B8224BA1D5E2AB600AF669D /* Build configuration list for PBXNativeTarget "ClandestinoTests" */;
 			buildPhases = (
+				666A31ADE491207E48D70164 /* [CP] Check Pods Manifest.lock */,
 				5B82249F1D5E2AB600AF669D /* Sources */,
 				5B8224A01D5E2AB600AF669D /* Frameworks */,
 				5B8224A11D5E2AB600AF669D /* Resources */,
+				39CF104C972E51EC2D97A00C /* [CP] Embed Pods Frameworks */,
+				ACB8EA9FA6076FD60924A123 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,9 +216,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5B8224BD1D5E2AB600AF669D /* Build configuration list for PBXNativeTarget "ClandestinoUITests" */;
 			buildPhases = (
+				2C667ADD0ED2E4591C213C96 /* [CP] Check Pods Manifest.lock */,
 				5B8224AA1D5E2AB600AF669D /* Sources */,
 				5B8224AB1D5E2AB600AF669D /* Frameworks */,
 				5B8224AC1D5E2AB600AF669D /* Resources */,
+				9E61FAF3B749369359CB7041 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +301,129 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		16DE7FDBEC4D0759A6005C8A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2C667ADD0ED2E4591C213C96 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		30B79C1DAB495AE611B93C11 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Clandestino/Pods-Clandestino-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		39CF104C972E51EC2D97A00C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ClandestinoTests/Pods-ClandestinoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		666A31ADE491207E48D70164 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9E61FAF3B749369359CB7041 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ClandestinoUITests/Pods-ClandestinoUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ACB8EA9FA6076FD60924A123 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ClandestinoTests/Pods-ClandestinoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1FE93CB7FC295B1645F0E8A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Clandestino/Pods-Clandestino-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5B8224881D5E2AB600AF669D /* Sources */ = {
@@ -401,6 +572,7 @@
 		};
 		5B8224B81D5E2AB600AF669D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D858D97B3F17F9F861788592 /* Pods-Clandestino.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Clandestino/Info.plist;
@@ -412,6 +584,7 @@
 		};
 		5B8224B91D5E2AB600AF669D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A138D3CA35D220F777804405 /* Pods-Clandestino.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Clandestino/Info.plist;
@@ -423,6 +596,7 @@
 		};
 		5B8224BB1D5E2AB600AF669D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4ECCD8AFF766BA729883A253 /* Pods-ClandestinoTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = ClandestinoTests/Info.plist;
@@ -435,6 +609,7 @@
 		};
 		5B8224BC1D5E2AB600AF669D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 450C60DE7887DA08790DC2C2 /* Pods-ClandestinoTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = ClandestinoTests/Info.plist;
@@ -447,6 +622,7 @@
 		};
 		5B8224BE1D5E2AB600AF669D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCFF9EA606EC2A474219A6F3 /* Pods-ClandestinoUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = ClandestinoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -458,6 +634,7 @@
 		};
 		5B8224BF1D5E2AB600AF669D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 481B9B9911EB2A50B31CA68B /* Pods-ClandestinoUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = ClandestinoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -486,6 +663,7 @@
 				5B8224B91D5E2AB600AF669D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5B8224BA1D5E2AB600AF669D /* Build configuration list for PBXNativeTarget "ClandestinoTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +672,7 @@
 				5B8224BC1D5E2AB600AF669D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5B8224BD1D5E2AB600AF669D /* Build configuration list for PBXNativeTarget "ClandestinoUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +681,7 @@
 				5B8224BF1D5E2AB600AF669D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
