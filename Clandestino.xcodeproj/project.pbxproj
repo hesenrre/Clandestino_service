@@ -10,6 +10,7 @@
 		1171598FD9696B7951930646 /* Pods_Clandestino.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 166200C1A28BAEF96299C3C6 /* Pods_Clandestino.framework */; };
 		42DCC5C3E6E0654D309ACA85 /* Pods_ClandestinoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8EBED4B43E9499F0C938785 /* Pods_ClandestinoUITests.framework */; };
 		4B64FA3A3A8722E50CBC9688 /* Pods_ClandestinoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 530885AB55B5091A26B242D4 /* Pods_ClandestinoTests.framework */; };
+		5B0467931D62CF8E0004AF5F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0467921D62CF8E0004AF5F /* Constants.swift */; };
 		5B8224901D5E2AB600AF669D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B82248F1D5E2AB600AF669D /* AppDelegate.swift */; };
 		5B8224951D5E2AB600AF669D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B8224931D5E2AB600AF669D /* Main.storyboard */; };
 		5B8224981D5E2AB600AF669D /* Clandestino.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5B8224961D5E2AB600AF669D /* Clandestino.xcdatamodeld */; };
@@ -43,6 +44,7 @@
 		481B9B9911EB2A50B31CA68B /* Pods-ClandestinoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClandestinoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ClandestinoUITests/Pods-ClandestinoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4ECCD8AFF766BA729883A253 /* Pods-ClandestinoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClandestinoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ClandestinoTests/Pods-ClandestinoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		530885AB55B5091A26B242D4 /* Pods_ClandestinoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClandestinoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B0467921D62CF8E0004AF5F /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		5B82248C1D5E2AB600AF669D /* Clandestino.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clandestino.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B82248F1D5E2AB600AF669D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B8224941D5E2AB600AF669D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				5B82249E1D5E2AB600AF669D /* Info.plist */,
 				5B8224961D5E2AB600AF669D /* Clandestino.xcdatamodeld */,
 				5B9D2A561D5E310D0096CA81 /* HomeViewController.swift */,
+				5B0467921D62CF8E0004AF5F /* Constants.swift */,
 			);
 			path = Clandestino;
 			sourceTree = "<group>";
@@ -433,6 +436,7 @@
 				5B8224901D5E2AB600AF669D /* AppDelegate.swift in Sources */,
 				5B8224981D5E2AB600AF669D /* Clandestino.xcdatamodeld in Sources */,
 				5B9D2A571D5E310D0096CA81 /* HomeViewController.swift in Sources */,
+				5B0467931D62CF8E0004AF5F /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
