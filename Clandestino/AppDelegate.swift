@@ -8,11 +8,13 @@
 
 import UIKit
 import CoreData
+import OAuthSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var credential: OAuthSwiftCredential?
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
@@ -42,6 +44,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
         // Saves changes in the application's managed object context before the application terminates.
         self.saveContext()
+    }
+    
+    func application(app: UIApplication, openURL url: NSURL, options: [String : AnyObject]) -> Bool {
+        NSLog("Opening app from url \(url)")
+        if url.host == "callback" {
+            print("handling url")
+            OAuthSwift.handleOpenURL(url)
+        }
+        return true
     }
 
     // MARK: - Core Data stack
