@@ -7,6 +7,7 @@ target 'Clandestino' do
 
   # Pods for Clandestino
   pod 'OAuthSwift'
+  pod 'KeychainAccess'
 
   target 'ClandestinoTests' do
     inherit! :search_paths
