@@ -9,21 +9,13 @@
 import UIKit
 import OAuthSwift
 import KeychainAccess
+import SafariServices
 
 class HomeViewController: UIViewController {
 
-    let oauthswift = OAuth2Swift(
-        consumerKey:    "9a35ec47a80f7c2941492240bc9d120d42de74e544659a1b317fe6b256fd9c5a",
-        consumerSecret: "d0d22062a21bc1f0e97bdeaba43843f18f810b3203dee3371bd63a8df741bb6b",
-        authorizeUrl:   "http://\(Constants._SERVICE_HOST)/oauth/authorize",
-        accessTokenUrl: "https://\(Constants._SERVICE_HOST)/oauth/token",
-        responseType:   "code"
-    )
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        let credential = (UIApplication.sharedApplication().delegate as! AppDelegate).credential
-        NSLog("Loading Home Controller: \(credential)")
+        Constants.oauthswift.authorize_url_handler = SafariURLHandler(viewController: self, oauthSwift: Constants.oauthswift)
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,13 +23,14 @@ class HomeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func login(sender: UIButton) {
-        oauthswift.authorizeWithCallbackURL(
+    @IBAction func login(sender: AnyObject) {
+        Constants.oauthswift.authorizeWithCallbackURL(
             NSURL(string: "clandestinoapp://callback")!,
             scope: "", state: generateStateWithLength(20) as String,
             success: { credential, response, parameters in
-                print("credential -> \(credential.oauth_token)")
-                (UIApplication.sharedApplication().delegate as! AppDelegate).credential = credential
+                let keychain = Keychain(service: "com.roonin.Clandestino")
+                keychain["token"] = credential.oauth_token
+                keychain["secret"] = credential.oauth_token_secret
             },
             failure: { error in
                 print("error -> \(error)")
@@ -46,10 +39,35 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func loadData(sender: UIButton) {
-        let credential = (UIApplication.sharedApplication().delegate as! AppDelegate).credential
-        print(credential!.oauth_token)
+        let keychain = Keychain(service: "com.roonin.Clandestino")
+        print("keychain token \(keychain["token"])")
+        if (keychain["token"] == nil) || (keychain["secret"] == nil) {
+            login([])
+            return
+        }
+        
+        Constants.oauthswift.client.credential.oauth_token = keychain["token"] as String!
+        Constants.oauthswift.client.credential.oauth_token_secret = keychain["secret"] as String!
+        Constants.oauthswift.client.get("https://\(Constants._SERVICE_HOST)/api/v1/me.json", success: { (data, response) in
+            print("success with \(NSString(data: data, encoding: NSUTF8StringEncoding)) \(response)")
+        }) { (error) in
+            print("success with \(error)")
+        }
     }
 
+    @IBAction func logout(sender: AnyObject) {
+        let svc = SFSafariViewController(URL: NSURL(string: "http://\(Constants._SERVICE_HOST)/")!)
+        self.presentViewController(svc, animated: true, completion: {
+            print("hi")
+        })
+        let keychain = Keychain(service: "com.roonin.Clandestino")
+        do{
+            try keychain.remove("token")
+            try keychain.remove("secret")
+        }catch let error {
+            print("error: \(error)")
+        }
+    }
     /*
     // MARK: - Navigation
 

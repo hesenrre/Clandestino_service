@@ -47,9 +47,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(app: UIApplication, openURL url: NSURL, options: [String : AnyObject]) -> Bool {
-        NSLog("Opening app from url \(url)")
         if url.host == "callback" {
-            print("handling url")
             OAuthSwift.handleOpenURL(url)
         }
         return true

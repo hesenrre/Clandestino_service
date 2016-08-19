@@ -34,9 +34,18 @@
                                     <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H50-qj-tG2"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aPM-gV-dpb">
+                                <rect key="frame" x="276" y="323" width="48" height="30"/>
+                                <state key="normal" title="Logout"/>
+                                <connections>
+                                    <action selector="logout:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sF5-Tm-5Hl"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="aPM-gV-dpb" firstAttribute="top" secondItem="5fb-oM-8Wk" secondAttribute="bottom" constant="8" id="93i-hj-CVq"/>
+                            <constraint firstItem="aPM-gV-dpb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9FB-l9-LQQ"/>
                             <constraint firstItem="6UE-be-HcS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Bct-NT-QZW"/>
                             <constraint firstItem="5fb-oM-8Wk" firstAttribute="top" secondItem="6UE-be-HcS" secondAttribute="bottom" constant="8" symbolic="YES" id="IQ7-yh-MPv"/>
                             <constraint firstItem="5fb-oM-8Wk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="JUb-MU-iQF"/>
