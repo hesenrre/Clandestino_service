@@ -9,7 +9,10 @@ Doorkeeper.configure do
     # Put your resource owner authentication logic here.
     # Example implementation:
       # User.find_by_id(session[:user_id]) || redirect_to(new_user_session_url)
-      current_user || redirect_to(new_user_session_url)
+      # current_user || redirect_to(new_user_session_url)
+      request.params[:user] = {:email => request.params[:username], :password => request.params[:password]}
+      request.env["devise.allow_params_authentication"] = true
+      request.env["warden"].authenticate!(:scope => :user)
   end
 
   # If you want to restrict access to the web interface for adding oauth authorized applications, you need to declare the block below.
@@ -25,6 +28,7 @@ Doorkeeper.configure do
   # Access token expiration time (default 2 hours).
   # If you want to disable expiration, set this to nil.
   # access_token_expires_in 2.hours
+  access_token_expires_in nil 
 
   # Assign a custom TTL for implicit grants.
   # custom_access_token_expires_in do |oauth_client|
