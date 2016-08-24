@@ -2,6 +2,7 @@
 # platform :ios, '9.0'
 
 # Cambio de prueba
+# otro cambio
 
 target 'Clandestino' do
   # Comment this line if you're not using Swift and don't want to use dynamic frameworks
